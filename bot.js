@@ -31,9 +31,4 @@ client.on('message', message => {
     }
 });
 
-var http = require("http");
-setInterval(function() {
-    http.get("https://chuffy-bot.herokuapp.com/");
-}, 300000);
-
 client.login(process.env.BOT_TOKEN);
