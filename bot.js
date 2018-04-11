@@ -27,7 +27,7 @@ client.on('message', message => {
 client.on('message', message => {
     if(message.attachments) {
             message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
-            break;
+            continue;
     }
 });
 
