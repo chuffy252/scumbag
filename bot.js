@@ -16,9 +16,9 @@ client.on('message', message => {
     if(message.content.toLowerCase().substring(0, 10) === 'i love you') {
             message.reply('ya one sorreh fackin twat arent ya mate ');
     }
-    else if(message.attachments) {
-            message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
-    }
+    //else if(message.attachments) {
+      //      message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
+    //}
 });
 
 client.on('message', message => {
