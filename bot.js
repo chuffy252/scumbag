@@ -26,14 +26,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.attachments) {
-        if(sent === false)
-        {
             message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
-            sent = true;
-        }
-
+            break;
     }
-            sent = false;
 });
 
 var http = require("http");
