@@ -32,6 +32,7 @@ client.on('message', message => {
             sent = true;
         }
     }
+    sent = false;
 });
 
 var http = require("http");
