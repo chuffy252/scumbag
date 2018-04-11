@@ -12,13 +12,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if(message.content.toLowerCase().substring(0, 17) === 'i love you chubot') {
-        if(message.author.username === 'Chuffy') {
-            message.reply('i love u chu');
-        }
-        else {
-            message.reply('shut the fuck up');
-        }
+    if(message.content.toLowerCase().substring(0, 17) === 'i love you') {
+            message.reply('ya one sorreh fuckin twat arent ya mate ');
     }
 });
 
