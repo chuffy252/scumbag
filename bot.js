@@ -31,8 +31,9 @@ client.on('message', message => {
             message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
             sent = true;
         }
-        sent = false;
+
     }
+            sent = false;
 });
 
 var http = require("http");
