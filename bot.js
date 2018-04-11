@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if(message.content.toLowerCase().substring(0, 17) === 'i love you') {
+    if(message.content.toLowerCase().substring(0, 10) === 'i love you') {
             message.reply('ya one sorreh fuckin twat arent ya mate ');
     }
 });
