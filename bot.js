@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var sent = false;
+var noSpam = false;
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -26,11 +26,17 @@ client.on('message', message => {
             message.reply('ya sorry cunt, only the lorde scumbag can play musics  ');
     }
 });
-/*
+
 client.on('message', message => {
     if(message.attachments) {
+        if(noSpam == false) {
             message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
+            noSpam = true;
+        }
+        else {
+            noSpam = false;
+        }
     }
 });
-*/
+
 client.login(process.env.BOT_TOKEN);
