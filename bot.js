@@ -27,16 +27,16 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
-    if(message.attachments) {
-        if(noSpam == false) {
-            message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
-            noSpam = true;
-        }
-        else {
-            noSpam = false;
-        }
-    }
-});
+// client.on('message', message => {
+//     if(message.attachments) {
+//         if(noSpam == false) {
+//             message.reply('is that a picture of you mate? golly fuckin eh you are uglier than i thought ya fackin prick');
+//             noSpam = true;
+//         }
+//         else {
+//             noSpam = false;
+//         }
+//     }
+// });
 
 client.login(process.env.BOT_TOKEN);
